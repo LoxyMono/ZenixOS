@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <!--<RuntimeIdentifier>cosmos</RuntimeIdentifier>-->
+        <Platform>cosmos</Platform>
+        <SupportsX86Intrinsics>false</SupportsX86Intrinsics>
+        <SelfContained>True</SelfContained>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <EnableGDB>False</EnableGDB>
+        <StartCosmosGDB>False</StartCosmosGDB>
+        <VisualStudioDebugPort>Pipe: Cosmos\Serial</VisualStudioDebugPort>
+        <CosmosDebugPort>Serial: COM1</CosmosDebugPort>
+        <Launch>VMware</Launch>
+        <Profile>VMware</Profile>
+        <Description>Use VMware Player or Workstation to deploy and debug.</Description>
+        <PxeInterface>192.168.0.8</PxeInterface>
+        <CompileVBEMultiboot>True</CompileVBEMultiboot>
+        <VBEResolution>800x600x32</VBEResolution>
+        <DebugEnabled>False</DebugEnabled>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="src\Cursor.bmp" />
+      <None Remove="src\UI\IMG\0.bmp" />
+      <None Remove="src\Logo.bmp" />
+      <None Remove="src\UI\IMG\1.bmp" />
+      <None Remove="src\UI\IMG\2.bmp" />
+      <None Remove="src\UI\IMG\3.bmp" />
+      <None Remove="src\UI\IMG\4.bmp" />
+      <None Remove="src\UI\IMG\5.bmp" />
+      <None Remove="src\UI\IMG\6.bmp" />
+      <None Remove="src\UI\IMG\7.bmp" />
+      <None Remove="src\UI\IMG\8.bmp" />
+      <None Remove="src\UI\IMG\9.bmp" />
+      <None Remove="src\UI\IMG\Colon.bmp" />
+      <None Remove="src\UI\IMG\Cursor.bmp" />
+      <None Remove="src\UI\IMG\Logo.bmp" />
+      <None Remove="src\UI\IMG\Zero.bmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="src\UI\IMG\1.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\2.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\3.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\4.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\5.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\6.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\7.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\8.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\9.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\Colon.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\Cursor.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\Logo.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\Zero.bmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Cosmos.Build" Version="0-*" NoWarn="NU1604" />
+        <PackageReference Include="Cosmos.Debug.Kernel" Version="0-*" NoWarn="NU1604" />
+        <PackageReference Include="Cosmos.System2" Version="0-*" NoWarn="NU1604" />
+    </ItemGroup>
+
+</Project>
