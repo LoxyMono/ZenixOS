@@ -38,7 +38,11 @@
       <None Remove="src\UI\IMG\9.bmp" />
       <None Remove="src\UI\IMG\Colon.bmp" />
       <None Remove="src\UI\IMG\Cursor.bmp" />
+      <None Remove="src\UI\IMG\IndicatorButtonTemplate.bmp" />
       <None Remove="src\UI\IMG\Logo.bmp" />
+      <None Remove="src\UI\IMG\Sleep.bmp" />
+      <None Remove="src\UI\IMG\SleepMenuShutdownButton.bmp" />
+      <None Remove="src\UI\IMG\Wallpaper1.bmp" />
       <None Remove="src\UI\IMG\Zero.bmp" />
     </ItemGroup>
 
@@ -54,7 +58,11 @@
       <EmbeddedResource Include="src\UI\IMG\9.bmp" />
       <EmbeddedResource Include="src\UI\IMG\Colon.bmp" />
       <EmbeddedResource Include="src\UI\IMG\Cursor.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\IndicatorButtonTemplate.bmp" />
       <EmbeddedResource Include="src\UI\IMG\Logo.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\Sleep.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\SleepMenuShutdownButton.bmp" />
+      <EmbeddedResource Include="src\UI\IMG\Wallpaper1.bmp" />
       <EmbeddedResource Include="src\UI\IMG\Zero.bmp" />
     </ItemGroup>
 
